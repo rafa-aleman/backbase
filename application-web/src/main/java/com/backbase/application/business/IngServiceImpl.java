@@ -2,8 +2,12 @@ package com.backbase.application.business;
 
 import com.backbase.application.client.IngClient;
 import com.backbase.application.domain.Atm;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * ING Service Implementation
@@ -13,6 +17,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class IngServiceImpl implements IngService {
 
+    private static final Logger LOGGER = LogManager.getLogger();
+
     private final IngClient ingClient;
 
     @Autowired
@@ -21,7 +27,7 @@ public class IngServiceImpl implements IngService {
     }
 
     @Override
-    public Atm getAtms() {
+    public List<Atm> getAtms() {
         return this.ingClient.getAtms();
     }
 }

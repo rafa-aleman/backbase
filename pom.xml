@@ -22,6 +22,8 @@
 
         <!-- Spring versions -->
         <spring-boot.version>1.5.9.RELEASE</spring-boot.version>
+
+        <commons-io.version>2.6</commons-io.version>
     </properties>
 
 
@@ -35,6 +37,12 @@
                 <version>${spring-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons-io.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

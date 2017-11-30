@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 /**
  * AtmController
 
@@ -37,7 +39,7 @@ public class ATMController {
      */
     @GetMapping("/ing")
     @ResponseStatus(HttpStatus.OK)
-    public Atm getINGAtms() {
+    public List<Atm> getINGAtms() {
         LOGGER.debug("Getting ING ATMs");
         return this.ingService.getAtms();
     }

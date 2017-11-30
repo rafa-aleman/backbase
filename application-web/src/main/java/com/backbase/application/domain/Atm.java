@@ -10,5 +10,9 @@ import lombok.Data;
 @Data
 public class Atm {
 
-    private String name;
+    private Address address;
+    private Integer distance;
+    private String type;
+
+
 }
