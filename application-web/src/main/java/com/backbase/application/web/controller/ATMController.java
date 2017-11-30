@@ -1,8 +1,6 @@
 package com.backbase.application.web.controller;
 
 import com.backbase.application.business.IngService;
-import com.backbase.application.business.IngServiceImpl;
-import com.backbase.application.client.IngClient;
 import com.backbase.application.domain.Atm;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
