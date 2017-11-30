@@ -1,0 +1,12 @@
+*.java       text diff=java
+*.xml        text
+*.properties text
+*.json       text
+*.vm         text
+*.xjb        text
+*.xsd        text
+*.jpg        binary
+*.png        binary
+*.pdf        binary
+*.sh         eol=lf
+*.cli        eol=lf
